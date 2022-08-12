@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/3.apis/productApi.js",
+    "start": "nodemon src/3.apis/StudentMongoAPI.js",
     "dev-start": "nodemon app.js"
   },
   "keywords": [],
