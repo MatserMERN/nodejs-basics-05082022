@@ -1,19 +1,19 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema
-//mongoose.pluralize(null);
-const studentSchema = new Schema({
-    name: {
+
+const userSchema = new Schema({
+    username: {
         type: String,
         required: true
     },
+    password: {
+        type: String,
+        required: true
+    }, 
     email: {
-        type: String,
-        required: true
-    },
-    city: {
         type: String,
         required: true
     }
 }, {versionKey: false})
 
-export const Student = mongoose.model("student", studentSchema, "student")
+export const User = mongoose.model("user", userSchema, "user")
